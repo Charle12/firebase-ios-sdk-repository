@@ -34,8 +34,8 @@ class IssueDetailVC: UIViewController {
                 SharedActivity.sharedInstance()?.stop()
                 switch result {
                 case .success(let result):
-                    if let comment = result, comment.count > 0 {
-                        weakSelf?.viewModel.getCommentsList(comments: comment)
+                    if let issues = result, issues.count > 0 {
+                        weakSelf?.viewModel.getCommentsList(issues: issues)
                         weakSelf?.tableForIssueComment.reloadData()
                     } else {
                         IssueDao.shared.showErrorAlert(title: constants.APP_NAME, message: constants.ERROR_MESSAGE, obj: self)

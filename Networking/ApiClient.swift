@@ -29,11 +29,11 @@ class ApiClient: GenericAPIClient {
     }
     
     //in the signature of the function in the success case we define the Class type thats is the generic one in the API
-    func getIssueCommentDetail(from feedType: IssueFeed, completion: @escaping (Result<Array<Comment>?, APIError>) -> Void) {
+    func getIssueCommentDetail(from feedType: IssueFeed, completion: @escaping (Result<Array<Issue>?, APIError>) -> Void) {
         let endpoint = feedType
         let request = endpoint.request
-        fetch(with: request, decode: { json -> Array<Comment>? in
-            guard let issueDetail = json as? Array<Comment> else { return  nil }
+        fetch(with: request, decode: { json -> Array<Issue>? in
+            guard let issueDetail = json as? Array<Issue> else { return  nil }
             return issueDetail
         }, completion: completion)
     }

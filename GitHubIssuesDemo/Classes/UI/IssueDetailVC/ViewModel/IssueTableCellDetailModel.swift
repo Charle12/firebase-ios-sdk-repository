@@ -10,14 +10,14 @@ import Foundation
 
 class IssueTableCellDetailModel {
     
-    private let comment: Comment
+    private let issue: Issue
     
-    init(comment: Comment) {
-        self.comment = comment
+    init(issue: Issue) {
+        self.issue = issue
     }
     
     var body: String {
-        if let body = comment.body {
+        if let body = issue.body {
             return body
         }
         return constants.EMPTY_STRING

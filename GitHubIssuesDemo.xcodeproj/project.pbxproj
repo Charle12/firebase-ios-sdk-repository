@@ -28,7 +28,6 @@
 		8FA81ECB2312EADC002E1AA3 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA81EC62312EADC002E1AA3 /* EndPoint.swift */; };
 		8FA81ECE2312F425002E1AA3 /* IssueDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA81ECD2312F425002E1AA3 /* IssueDetailViewModel.swift */; };
 		8FA81ED02312F43C002E1AA3 /* IssueTableCellDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA81ECF2312F43C002E1AA3 /* IssueTableCellDetailModel.swift */; };
-		8FA81ED32312F4D3002E1AA3 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA81ED22312F4D3002E1AA3 /* Comment.swift */; };
 		8FA81ED62312FDC3002E1AA3 /* CommentTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA81ED52312FDC3002E1AA3 /* CommentTVC.swift */; };
 		8FA81EE123130BA7002E1AA3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA81EDF23130BA7002E1AA3 /* Reachability.m */; };
 		8FA81EE9231315C9002E1AA3 /* SharedActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA81EE8231315C9002E1AA3 /* SharedActivity.m */; };
@@ -59,7 +58,6 @@
 		8FA81EC62312EADC002E1AA3 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		8FA81ECD2312F425002E1AA3 /* IssueDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailViewModel.swift; sourceTree = "<group>"; };
 		8FA81ECF2312F43C002E1AA3 /* IssueTableCellDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTableCellDetailModel.swift; sourceTree = "<group>"; };
-		8FA81ED22312F4D3002E1AA3 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		8FA81ED52312FDC3002E1AA3 /* CommentTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTVC.swift; sourceTree = "<group>"; };
 		8FA81EDE23130BA6002E1AA3 /* GitHubIssuesDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GitHubIssuesDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		8FA81EDF23130BA7002E1AA3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
@@ -181,7 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				8FA81ED42312FDAA002E1AA3 /* CommentTVC */,
-				8FA81ED12312F4C1002E1AA3 /* Model */,
 				8FA81ECC2312F405002E1AA3 /* ViewModel */,
 				8FA81E8323129CBE002E1AA3 /* IssueDetailVC.swift */,
 			);
@@ -240,14 +237,6 @@
 				8FA81ECF2312F43C002E1AA3 /* IssueTableCellDetailModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		8FA81ED12312F4C1002E1AA3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				8FA81ED22312F4D3002E1AA3 /* Comment.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		8FA81ED42312FDAA002E1AA3 /* CommentTVC */ = {
@@ -376,7 +365,6 @@
 				8FA81E7923128083002E1AA3 /* Issue.swift in Sources */,
 				8FA81E8423129CBE002E1AA3 /* IssueDetailVC.swift in Sources */,
 				8FA81ECA2312EADC002E1AA3 /* Result.swift in Sources */,
-				8FA81ED32312F4D3002E1AA3 /* Comment.swift in Sources */,
 				8FA81EC72312EADC002E1AA3 /* APIError.swift in Sources */,
 				8FA81EE9231315C9002E1AA3 /* SharedActivity.m in Sources */,
 				8FA81EC82312EADC002E1AA3 /* ApiClient.swift in Sources */,

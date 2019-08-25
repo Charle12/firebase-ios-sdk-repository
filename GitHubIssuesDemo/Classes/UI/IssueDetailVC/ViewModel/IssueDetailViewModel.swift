@@ -10,18 +10,18 @@ import Foundation
 
 class IssueDetailViewModel {
     
-    private var comments:[Comment] = [Comment]()
+    private var issues:[Issue] = [Issue]()
     
-    public func getCommentsList(comments: [Comment]) {
-        self.comments = comments
+    public func getCommentsList(issues: [Issue]) {
+        self.issues = issues
     }
     
     public func cellViewModel(index: Int) -> IssueTableCellDetailModel? {
-        let issueTableCellDetailModel = IssueTableCellDetailModel(comment: comments[index])
+        let issueTableCellDetailModel = IssueTableCellDetailModel(issue: issues[index])
         return issueTableCellDetailModel
     }
     
     public var count: Int {
-        return comments.count
+        return issues.count
     }
 }
